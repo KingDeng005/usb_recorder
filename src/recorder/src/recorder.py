@@ -25,9 +25,9 @@ class Recorder():
             return 0
     
     @staticmethod
-    def _ckeck_audio():
+    def _check_audio():
         # TO-DO
-        return false
+        return True 
 
     def start_record(self, dir):
         # create folder if not done so
@@ -77,5 +77,6 @@ class Recorder():
 
 if __name__ == "__main__":
     recorder = Recorder()
-    recorder.start_record(dir='/home/fuheng/usb_cam_recorder/') 
-    recorder.stop_record()
+    recorder.start_record(dir='/home/fuheng/usb_cam_recorder') 
+    time.sleep(10)
+    recorder.stop_record(clear=False)

@@ -1,7 +1,7 @@
 <launch>
   <arg name="dst" default="$(env HOME)/usb_cam_video"/>
 
-  <node name="video_recorder" pkg="image_view" type="video_recorder" output="screen">
+  <node name="video_recorder" pkg="image_view_ts" type="video_recorder" output="screen">
     <param name="filename" value="$(arg dst)/output.avi"/>
   </node>
 

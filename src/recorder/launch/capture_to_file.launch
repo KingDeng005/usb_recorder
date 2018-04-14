@@ -10,7 +10,7 @@
     <param name="~device" value="$(arg device)"/>
     <param name="channels" value="$(arg channels)"/>
     <param name="sample_rate" value="$(arg sample_rate)"/>
-    <param name="dst" value="$(arg dst)/$(arg ns).mp3"/>
+    <param name="dst" value="$(arg dst)/output.mp3"/>
     <param name="format" value="$(arg format)"/>
   </node>
 

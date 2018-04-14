@@ -14,7 +14,7 @@
   <!-- video_record -->
   <arg name="video" default="false"/>
   <group if="$(arg video)">
-    <include file="$(find image_view)/launch/video_capture_launch.launch">
+    <include file="$(find image_view_ts)/launch/video_capture.launch">
       <arg name="dst" value="$(arg dir)" />
     </include>
   </group>
@@ -22,8 +22,8 @@
   <!-- audio_record -->
   <arg name="audio" default="false"/>
   <group if="$(arg audio)">
-    <include file="$(find console_backend)/launch/capture_to_file.launch">
-      <arg name="device" value="hw:1,0"/>
+    <include file="$(find recorder)/launch/capture_to_file.launch">
+      <arg name="device" value="hw:2"/>
       <arg name="dst" value="$(arg dir)" />
     </include>
   </group>
