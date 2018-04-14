@@ -1,0 +1,8 @@
+*.pyc
+*.swp
+*.exe
+*.out
+*.lib
+*.dll
+*.so
+*.app
