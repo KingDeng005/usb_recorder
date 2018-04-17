@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <launch>
 
-  <arg name="dir" default="$(env HOME)/usb_cam_video"/>
+  <arg name="dir" default="$(env HOME)/usb_cam_recorder"/>
 
   <!-- usb cam launch -->
   <arg name="usb_cam" default="false"/>
@@ -23,7 +23,6 @@
   <arg name="audio" default="false"/>
   <group if="$(arg audio)">
     <include file="$(find recorder)/launch/capture_to_file.launch">
-      <arg name="device" value="hw:2"/>
       <arg name="dst" value="$(arg dir)" />
     </include>
   </group>
